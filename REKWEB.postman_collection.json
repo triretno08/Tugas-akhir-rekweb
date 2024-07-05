@@ -1,0 +1,756 @@
+{
+	"info": {
+		"_postman_id": "ca83fb4b-a360-4af3-9b7b-e263133fefb2",
+		"name": "REKWEB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34712068"
+	},
+	"item": [
+		{
+			"name": "Dosen",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip",
+									"value": "9998898989",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "semarang",
+									"type": "text"
+								},
+								{
+									"key": "prodi",
+									"value": "Teknik Informatika",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "089898298323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/dosen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip",
+									"value": "9998898989",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan OKE",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "semarang",
+									"type": "text"
+								},
+								{
+									"key": "prodi",
+									"value": "Teknik Informatika",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "089898298323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/update/9998898989",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"update",
+								"9998898989"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/9998898989",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"9998898989"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip",
+									"value": "9998898989",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "semarang",
+									"type": "text"
+								},
+								{
+									"key": "prodi",
+									"value": "Teknik Informatika",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "089898298323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/dosen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mahasiswa",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "G.231.21.0171",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan",
+									"type": "text"
+								},
+								{
+									"key": "umur",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Semarang",
+									"type": "text"
+								},
+								{
+									"key": "kota",
+									"value": "Semarang",
+									"type": "text"
+								},
+								{
+									"key": "kelas",
+									"value": "Sore",
+									"type": "text"
+								},
+								{
+									"key": "jurusan",
+									"value": "TI",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nim",
+									"value": "G.231.21.0171",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan OK",
+									"type": "text"
+								},
+								{
+									"key": "umur",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "Semarang",
+									"type": "text"
+								},
+								{
+									"key": "kota",
+									"value": "Semarang",
+									"type": "text"
+								},
+								{
+									"key": "kelas",
+									"value": "Sore",
+									"type": "text"
+								},
+								{
+									"key": "jurusan",
+									"value": "TI",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa/update/G.231.21.0171",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"update",
+								"G.231.21.0171"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa/G.231.21.0201",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa",
+								"G.231.21.0201"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip",
+									"value": "9998898989",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "semarang",
+									"type": "text"
+								},
+								{
+									"key": "prodi",
+									"value": "Teknik Informatika",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "089898298323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/mahasiswa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"mahasiswa"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Makul",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip",
+									"value": "9998898989",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "semarang",
+									"type": "text"
+								},
+								{
+									"key": "prodi",
+									"value": "Teknik Informatika",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "089898298323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/makul",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"makul"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip",
+									"value": "9998898989",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan OKE",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "semarang",
+									"type": "text"
+								},
+								{
+									"key": "prodi",
+									"value": "Teknik Informatika",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "089898298323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/update/9998898989",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"update",
+								"9998898989"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/dosen/9998898989",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dosen",
+								"9998898989"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "read",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nip",
+									"value": "9998898989",
+									"type": "text"
+								},
+								{
+									"key": "nama",
+									"value": "Egy kurnmiawan",
+									"type": "text"
+								},
+								{
+									"key": "alamat",
+									"value": "semarang",
+									"type": "text"
+								},
+								{
+									"key": "prodi",
+									"value": "Teknik Informatika",
+									"type": "text"
+								},
+								{
+									"key": "no_telp",
+									"value": "089898298323",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/makul",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"makul"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"testuser3@example.com\",\n  \"password\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Test User Admin3\",\n  \"email\": \"testuser3@example.com\",\n  \"password\": \"password\",\n  \"password_confirmation\": \"password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
